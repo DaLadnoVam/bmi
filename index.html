@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <!--    header   -->
+      <header class="header">
+        <div class="logo">
+          <a href="#">BMI</a>
+        </div>
+      </header>
+      <!--    main    -->
+      <main class="main">
+        <div id="content">
+          <!--    section    -->
+          <section class="main-view">
+            <div class="main-view__layout layout">
+              <h1 class="main-view__title">
+                <a class="main-view__link" href="#"
+                  ><span class="blue">B</span>ody <span class="blue">M</span>ass
+                  <span class="blue">I</span>ndex
+                  <span class="blue">C</span>alculator</a
+                >
+              </h1>
+              <p class="main-view__subtitle">Your Height</p>
+              <div class="main-view__wrapper">
+                <p class="height-text">150</p>
+                <input
+                  class="input__height"
+                  type="range"
+                  name=""
+                  id="height"
+                  value="155"
+                  min="100"
+                  max="210"
+                  step="1"
+                />
+              </div>
+              <p class="main-view__subtitle">Your Weight</p>
+              <div class="main-view__wrapper">
+                <div class="main-view__wrapper-inner">
+                  <button class="btn decrement"></button>
+                  <p class="weight-text">50</p>
+                  <button class="btn increment"></button>
+                </div>
+              </div>
+              <button class="btn-calculate" type="button">Calculate BMI</button>
+            </div>
+            <div class="main-view__result layout">
+              <div class="main-view__result-wrapper">
+                <p>BMI</p>
+                <h2 class="title-result">24</h2>
+                <p class="text-result">Normal</p>
+              </div>
+              <button class="btn-close" type="button">
+                <img src="images/arrow-close.png" alt="" />
+              </button>
+            </div>
+          </section>
+        </div>
+      </main>
+      <!--    footer   -->
+      <footer class="footer">
+        <section class="">
+          <div class="layout"></div>
+        </section>
+      </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

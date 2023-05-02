@@ -1,0 +1,16 @@
+.header {
+  @include box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 48px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+  background: white;
+  .logo {
+    a {
+      font-family: "Bungee Spice", cursive;
+      font-size: 48px;
+    }
+  }
+}
