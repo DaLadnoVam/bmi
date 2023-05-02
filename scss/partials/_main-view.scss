@@ -7,12 +7,24 @@
   }
   &__title {
     margin-bottom: 20px;
+    @media (max-width: 1439px) {
+      margin-bottom: 15px;
+    }
+    @media (max-width: 1023px) {
+      margin-bottom: 10px;
+    }
   }
   &__link {
     font-family: "Quicksand", sans-serif;
     font-size: 33px;
     color: #1f1f1f;
     text-transform: capitalize;
+    @media (max-width: 1439px) {
+      font-size: 27px;
+    }
+    @media (max-width: 1023px) {
+      font-size: 20px;
+    }
     .blue {
       color: #289df6;
     }
@@ -22,6 +34,10 @@
     font-size: 20px;
     color: #1f1f1f;
     margin-bottom: 10px;
+    @media (max-width: 1023px) {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
   }
   &__wrapper {
     width: 600px;
@@ -33,6 +49,40 @@
     padding: 48px 0;
     text-align: center;
     margin-bottom: 24px;
+    @media (max-width: 1439px) {
+      width: 520px;
+      height: 230px;
+      border-radius: 40px;
+      padding: 25px 0;
+      margin-bottom: 15px;
+    }
+    @media (max-width: 1023px) {
+      width: 450px;
+      height: 200px;
+      border-radius: 25px;
+      padding: 15px 0;
+      margin-bottom: 10px;
+    }
+    @media (max-width: 767px) {
+      width: 70%;
+      height: 200px;
+      border-radius: 25px;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    @media (max-width: 500px) {
+      width: 95%;
+      height: 160px;
+    }
+    &-weight {
+      @media (max-width: 1439px) {
+        height: 180px;
+      }
+      @media (max-width: 500px) {
+        height: 110px;
+        margin-bottom: 70px;
+      }
+    }
   }
   &__wrapper-inner {
     display: flex;
@@ -48,6 +98,14 @@
     line-height: 84px;
     color: $white;
     position: relative;
+    @media (max-width: 1439px) {
+      font-size: 50px;
+      line-height: 100%;
+    }
+    @media (max-width: 1023px) {
+      font-size: 40px;
+      line-height: 100%;
+    }
   }
   .height-text::after,
   .weight-text::after {
@@ -57,12 +115,25 @@
     bottom: -45px;
     right: 50%;
     transform: translateX(50%);
+    @media (max-width: 1439px) {
+      font-size: 27px;
+    }
+    @media (max-width: 1023px) {
+      font-size: 20px;
+      bottom: -30px;
+    }
   }
   .weight-text::after {
     content: "kg";
   }
   .weight-text {
     margin: 30px 110px 0 110px;
+    @media (max-width: 1023px) {
+      margin: 45px 60px 0 60px;
+    }
+    @media (max-width: 1023px) {
+      margin: 0 60px 0 60px;
+    }
   }
   input[type="range"] {
     position: absolute;
@@ -74,7 +145,15 @@
     -webkit-appearance: none;
     width: 100%;
     background: transparent;
-    width: 400px;
+    max-width: 400px;
+    @media (max-width: 1023px) {
+      bottom: 23px;
+      height: 38px;
+      max-width: 319px;
+    }
+    @media (max-width: 500px) {
+      width: 90%;
+    }
   }
   input[type="range"]:focus {
     outline: none;
@@ -172,6 +251,14 @@
     background: red;
     position: relative;
     margin-top: 30px;
+    @media (max-width: 1023px) {
+      width: 30px;
+      height: 30px;
+      margin-top: 50px;
+    }
+    @media (max-width: 500px) {
+      margin-top: 30px;
+    }
     &.decrement {
       background: transparent url(../../images/arrow-left.png) 100% / cover
         no-repeat;
@@ -194,8 +281,20 @@
     font-size: 36px;
     line-height: 100%;
     color: $white;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
     cursor: pointer;
+    @media (max-width: 1439px) {
+      width: 580px;
+    }
+    @media (max-width: 1023px) {
+      width: 450px;
+    }
+    @media (max-width: 767px) {
+      width: 70%;
+    }
+    @media (max-width: 767px) {
+      width: 95%;
+    }
   }
 
   &__result {
@@ -231,16 +330,24 @@
         font-family: "Work Sans";
         font-style: normal;
         font-weight: 900;
-        font-size: 59.0127px;
+        font-size: 59px;
         line-height: 69px;
+        @media (max-width: 1439px) {
+          font-size: 48px;
+          line-height: 1.2;
+        }
       }
       &:last-child {
         font-family: "Roboto";
         font-style: normal;
         font-weight: 400;
-        font-size: 59.0127px;
+        font-size: 59px;
         line-height: 69px;
         letter-spacing: 0.06em;
+        @media (max-width: 1439px) {
+          font-size: 48px;
+          line-height: 1.2;
+        }
       }
     }
     .title-result {
@@ -249,6 +356,13 @@
       font-weight: 400;
       font-size: 200px;
       line-height: 238px;
+      @media (max-width: 1439px) {
+        font-size: 120px;
+        line-height: 1.2;
+      }
+      @media (max-width: 14023px) {
+        font-size: 80px;
+      }
     }
   }
   &__wrapper {
@@ -265,6 +379,9 @@
     border: none;
     background: transparent;
     cursor: pointer;
+    @media (max-width: 500px) {
+      left: 0;
+    }
     img {
       display: block;
       width: 100%;

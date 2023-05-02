@@ -6,26 +6,15 @@ aside,
 section {
   @include box;
 }
+html,
 body {
   background: $white;
+  height: 100vh;
 }
 
-#wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  .main {
-    /* Чтобы занимал оставшееся пространство */
-    flex-grow: 1;
-  }
-  .footer {
-    /* Чтобы footer не уменьшался */
-    flex-shrink: 0;
-  }
-}
 .layout {
   @include box;
   max-width: 1200px;
-  padding: 15px;
   margin: 0 auto;
+  height: 100%;
 }

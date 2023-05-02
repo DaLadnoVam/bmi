@@ -7,10 +7,22 @@
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   z-index: 10;
   background: white;
+  margin-bottom: 40px;
   .logo {
     a {
       font-family: "Bungee Spice", cursive;
       font-size: 48px;
+      @media (max-width: 767px) {
+        font-size: 30px;
+      }
     }
+  }
+  @media (max-width: 1439px) {
+    padding: 10px 40px;
+    margin-bottom: 15px;
+  }
+  @media (max-width: 767px) {
+    padding: 15px;
+    margin-bottom: 10px;
   }
 }
